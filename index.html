@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Consultant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 3px;
+            padding-top: 17px;
+            padding-left: 25px;
+        }
+
+        .board {
+            text-transform: uppercase;
+            border: 1px solid white;
+            height: 18px;
+            font-family: Crimson Pro;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 200;
+            line-height: normal;
+        }
+
+        body {
+            background-color: #181719;;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text {
+            color: white;
+        }
+        
+        
+        .image {
+            width: 100%;
+            height: 100%;
+            padding-top: 20px;
+            position: relative;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .int {
+            display: flex;
+            flex-direction: column;
+            padding-left: 25px;
+            padding-right: 20px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        h4 {
+            color: #FFF;
+            font-family: Lora;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding-bottom: 20px;
+        }
+
+        .details {
+            width: 200px;
+            position: relative;
+        }
+
+        .bio {
+            color: #FFF;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;    
+        }
+
+        .advise {
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-top: 12px;
+        }
+
+        .hero {
+            border: 1px solid transparent;
+            border-radius: 100%;
+            padding-top: 10px;
+            padding-left: 14px;
+        }
+        
+        .dp {
+            width: 65px;
+            height: 75px;
+        }
+
+        .end {
+            display: flex;
+        }
+
+        section {
+            position: relative;
+            align-self: center;
+            background-color: black;
+            top: -46px;
+            width: 170px;
+        }
+
+        .name {
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding-top: 20px;
+            padding-left: 5px;
+        }
+
+        .work{
+            color: var(--Gray-3, #828282);
+            font-family: Montserrat;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding-top: 1px;
+            padding-left: 15px;
+        }
+
+        .year {
+            color: #FFF;
+            font-family: Lora;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-top: 14px;
+            padding-left: 16px;
+            padding-bottom: 5px;
+        }
+
+        .brief {
+            width: 150px;
+        }
+
+
+        footer {
+            position: relative;
+            bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+        .text2 {
+            color: #a9a9a9;
+            text-align: center;
+        }
+        span {
+            text-decoration: underline;
+            font-weight: 700;
+        }
+
+        .text3 {
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .icon {
+            background-color: white;
+        }
+
+        @media screen and (min-width: 500px) {
+        body {
+            margin-top: 40px;
+            margin-left: 77px;
+            margin-right: 77px;
+        }
+
+        .image {
+            width: 50%;
+            height: 50%;
+            padding-top: 153px;
+            position: relative;
+            left: 200px;
+        }
+
+        .int {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h4 {
+            font-size: 48px;
+            padding-bottom: 40px;
+        }
+
+        .details {
+            width: 450px;
+            padding-right: 87px;
+            position: relative;
+            top: 60px;
+        }
+
+        .bio {
+            font-size: 24px;
+        }
+
+        .advise {
+            padding-top: 86px;
+        }
+
+        .dp {
+            width: 85px;
+            height: 75px;
+        }
+
+        section {
+            position: relative;
+            top: 300px;
+            right: 170px;
+            width: auto;
+            align-self: center;
+            background-color: black;
+        }
+
+        .name {
+            padding-top: 23px;
+            padding-left: 15px;
+        }
+
+        .year {
+            color: #FFF;
+            font-family: Lora;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-top: 24px;
+            padding-left: 26px;
+            padding-bottom: 10px;
+        }
+
+        .brief {
+            width: 250px;
+        }
+
+
+        footer {
+            padding-top: 190px;
+            padding-bottom: 30px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <p class="board text">This interior</p>
+        <a href="./link.html"> <img src="./images/download.png" alt="menu dropdown" class="icon"> </a>
+    </header>
+    <main class="int">
+        <div class="details">
+        <h4 class="text">Modern Interior</h4>
+        <p class="text bio">A full-Service residential & commercial interior design and staging company offering professional organizing & <br> eco-services</p>
+        <p class="text advise"> Read More </p>
+    </div>
+    <div class="image">
+        <img src="./images/photo1.png" alt="home">
+    </div>
+<section>
+    <div class="end">
+    <div class="dp">
+    <img class="hero" src="./images/photo2.png" alt="icon">
+   </div>
+   <div>
+    <p class="name text">Aliza Webber</p>
+    <p class="work text">Interior designer</p></div>
+</div>
+    <div class="brief">
+        <p class="year text">Designed in 2020 by Aliza Webber</p>
+    </div>
+</section>
+    </main>
+    <footer>
+        <p class="text2">created by <span>username</span> - devChallenges.io</p>
+    </footer>
+</body>
+</html>
+
